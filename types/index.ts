@@ -16,9 +16,14 @@ export interface ISearchManufacturerProps {
   setManufacturer: (manufacturer: string) => void;
 }
 
+export interface IOptionsProps {
+  title: string;
+  value: string;
+}
+
 export interface ICustomFilterProps {
   title: string;
-  options?: any; //!!!
+  options: IOptionsProps[];
 }
 
 export interface ICarProps {
