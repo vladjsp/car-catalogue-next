@@ -41,3 +41,11 @@ export interface ICarDetailsProps {
   closeModal: () => void;
   car: ICarProps;
 }
+
+export interface IFilterProps {
+  manufacturer: string;
+  year: number;
+  fuel: string;
+  limit: number;
+  model: string;
+}

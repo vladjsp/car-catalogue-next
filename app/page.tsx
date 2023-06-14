@@ -3,8 +3,14 @@ import Image from 'next/image';
 
 import { fetchCars } from '@/utils';
 
-export default async function Home() {
-  const allCars = await fetchCars();
+export default async function Home({ searchParams }) {
+  const allCars = await fetchCars({
+    manufacturer: searchParams.manufacturer || '',
+    year: searchParams.year || '',
+    fuel: searchParams.fuel || '',
+    limit: searchParams.limit || '',
+    model: searchParams.model || '',
+  });
   //server console
   //console.log(allCars);
 
