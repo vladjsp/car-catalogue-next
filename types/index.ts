@@ -18,5 +18,26 @@ export interface ISearchManufacturerProps {
 
 export interface ICustomFilterProps {
   title: string;
-  options: any; //!!!
+  options?: any; //!!!
+}
+
+export interface ICarProps {
+  city_mpg: number;
+  class: string;
+  combination_mpg: number;
+  cylinders: number;
+  displacement: number;
+  drive: string;
+  fuel_type: string;
+  highway_mpg: number;
+  make: string;
+  model: string;
+  transmission: string;
+  year: number;
+}
+
+export interface ICarDetailsProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  car: ICarProps;
 }
