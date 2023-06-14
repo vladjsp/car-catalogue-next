@@ -52,5 +52,7 @@ export const generateCarImageUrl = (car: ICarProps, angle?: string) => {
   // url.searchParams.append('zoomLevel', zoomLevel);
   url.searchParams.append('angle', `${angle}`);
 
+  //console.log(url);
+
   return `${url}`;
 };
